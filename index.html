@@ -6,123 +6,522 @@
     <title>Grupo FRK</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav>
-        <h2>Grupo FRK</h2>
+<nav class="navbar">
+    <div class="container nav-content">
+        <h2 class="logo">Grupo FRK</h2>
 
-        <div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
             <a href="#inicio">Início</a>
             <a href="#servicos">Serviços</a>
+            <a href="#publico">Para quem é</a>
+            <a href="#processo">Como funciona</a>
             <a href="#portfolio">Portfólio</a>
             <a href="#contato">Contato</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <header id="inicio">
-        <h1>Soluções digitais para pequenas empresas</h1>
+<button class="section-arrow section-arrow-up hidden" id="arrow-up" aria-label="Ir para seção anterior">
+    ▲
+</button>
 
-        <p>
-            O Grupo FRK cria sites, automações e soluções com IA para ajudar pequenas empresas a venderem mais e atenderem melhor.
-        </p>
+<button class="section-arrow section-arrow-down" id="arrow-down" aria-label="Ir para próxima seção">
+    ▼
+</button>
 
-        <a href="#contato">Solicitar orçamento</a>
+    <header id="inicio" class="hero snap-section">
+        <div class="container hero-content">
+            <span class="hero-tag">Sites, automações e inteligência artificial</span>
+
+            <h1>Tecnologia para pequenas empresas venderem, atenderem e se organizarem melhor</h1>
+
+            <p>
+                O Grupo FRK desenvolve sites profissionais, cardápios digitais, agentes de IA e soluções digitais
+                para pequenos negócios que querem melhorar sua presença online e profissionalizar o atendimento.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
+                <a href="#servicos" class="btn btn-secondary">Conhecer soluções</a>
+            </div>
+
+        </div>
     </header>
 
-    <section id="servicos">
-    <h2>Nossos Serviços</h2>
+    <section class="section snap-section" id="servicos">
+        <div class="container">
+            <div class="section-title">
+                <span>Soluções digitais</span>
+                <h2>O que o Grupo FRK faz</h2>
+                <p>
+                    Criamos soluções simples, modernas e práticas para empresas que precisam melhorar sua comunicação,
+                    atendimento e organização usando tecnologia.
+                </p>
+            </div>
 
-    <div class="servicos-grid">
-        <div class="servico-card">
-            <h3>Sites Profissionais</h3>
-            <p>
-                Criação de sites institucionais modernos, responsivos e focados em gerar contato com clientes.
-            </p>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Sites Profissionais</h3>
+                    <p>
+                        Desenvolvimento de sites institucionais modernos, responsivos e focados em transmitir confiança,
+                        apresentar serviços e gerar contatos pelo WhatsApp.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Cardápios Digitais</h3>
+                    <p>
+                        Páginas práticas para restaurantes, lanchonetes e negócios de alimentação apresentarem produtos,
+                        categorias, destaques e receberem pedidos pelo WhatsApp.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Automações com IA</h3>
+                    <p>
+                        Soluções para automatizar respostas frequentes, organizar informações dos clientes e melhorar o
+                        atendimento inicial da empresa.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Agentes de IA</h3>
+                    <p>
+                        Criação de assistentes inteligentes para responder dúvidas, coletar dados, orientar clientes e
+                        encaminhar atendimentos para o canal correto.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Soluções sob medida</h3>
+                    <p>
+                        Desenvolvimento de ferramentas digitais simples para controle de pedidos, cadastros, solicitações,
+                        agendamentos e processos internos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Consultoria digital</h3>
+                    <p>
+                        Análise da presença digital da empresa e orientação sobre quais soluções fazem mais sentido para
+                        melhorar atendimento, imagem e organização.
+                    </p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="servico-card">
-            <h3>Cardápios Digitais</h3>
-            <p>
-                Páginas simples e práticas para restaurantes apresentarem seus produtos e receberem pedidos pelo WhatsApp.
-            </p>
+    <section class="section section-dark snap-section" id="publico">
+        <div class="container">
+            <div class="section-title">
+                <span>Para quem é</span>
+                <h2>Soluções para pequenos negócios que querem crescer com mais profissionalismo</h2>
+                <p>
+                    Atendemos empresas que precisam melhorar sua presença digital, organizar o atendimento e usar
+                    tecnologia de forma prática no dia a dia.
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card dark-card">
+                    <h3>Clínicas e consultórios</h3>
+                    <p>
+                        Sites profissionais, páginas de serviços, formulários de contato e agentes de IA para dúvidas
+                        frequentes e pré-atendimento.
+                    </p>
+                </div>
+
+                <div class="card dark-card">
+                    <h3>Escritórios de advocacia</h3>
+                    <p>
+                        Sites institucionais, apresentação de áreas de atuação e canais de contato com linguagem
+                        profissional e objetiva.
+                    </p>
+                </div>
+
+                <div class="card dark-card">
+                    <h3>Restaurantes e lanchonetes</h3>
+                    <p>
+                        Cardápios digitais, páginas de apresentação, botões de pedido pelo WhatsApp e soluções para
+                        melhorar a experiência do cliente.
+                    </p>
+                </div>
+
+                <div class="card dark-card">
+                    <h3>Prestadores de serviço</h3>
+                    <p>
+                        Sites, páginas de venda, formulários e automações para empresas locais que querem conquistar
+                        mais credibilidade online.
+                    </p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="servico-card">
-            <h3>Automações com IA</h3>
-            <p>
-                Soluções para automatizar atendimento, respostas frequentes e processos repetitivos.
-            </p>
+    <section class="section problems snap-section">
+        <div class="container">
+            <div class="section-title">
+                <span>Problemas que resolvemos</span>
+                <h2>Sua empresa pode estar perdendo oportunidades por falta de estrutura digital</h2>
+            </div>
+
+            <div class="problems-grid">
+                <div>
+                    <ul>
+                        <li>Falta de site profissional</li>
+                        <li>Baixa credibilidade online</li>
+                        <li>Atendimento manual e repetitivo</li>
+                        <li>Demora para responder clientes</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Falta de organização dos contatos</li>
+                        <li>Dificuldade para apresentar serviços</li>
+                        <li>Processos feitos de forma improvisada</li>
+                        <li>Pouco uso de tecnologia no dia a dia</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <section id="portfolio">
-    <h2>Portfólio</h2>
+    <section class="section snap-section" id="processo">
+        <div class="container">
+            <div class="section-title">
+                <span>Como funciona</span>
+                <h2>Um processo simples, claro e profissional</h2>
+            </div>
 
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <h3>Porto Grill</h3>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span>01</span>
+                    <h3>Diagnóstico</h3>
+                    <p>Entendemos o momento da empresa, os objetivos e os principais problemas que precisam ser resolvidos.</p>
+                </div>
 
-            <p>
-                Site institucional fictício para restaurante, com cardápio digital, botões de pedido pelo WhatsApp, localização e contato.
-            </p>
+                <div class="step-card">
+                    <span>02</span>
+                    <h3>Planejamento</h3>
+                    <p>Definimos a melhor solução: site, cardápio digital, automação, agente de IA ou sistema simples.</p>
+                </div>
 
-            <a 
-                href="https://grupofrk.github.io/restaurante-demo-01/"
-                target="_blank"
-                class="botao-portfolio"
-            >
-                Ver projeto online
-            </a>
+                <div class="step-card">
+                    <span>03</span>
+                    <h3>Desenvolvimento</h3>
+                    <p>Criamos a solução com foco em clareza, usabilidade, profissionalismo e resultado prático.</p>
+                </div>
+
+                <div class="step-card">
+                    <span>04</span>
+                    <h3>Entrega</h3>
+                    <p>Entregamos o projeto pronto para uso e orientamos a empresa sobre como utilizar a solução.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="portfolio-card">
-            <h3>Cardápio Digital Demo 01</h3>
+    <section class="section section-light snap-section">
+        <div class="container">
+            <div class="section-title">
+                <span>Diferenciais</span>
+                <h2>Por que escolher o Grupo FRK?</h2>
+            </div>
 
-            <p>
-                Cardápio digital fictício para restaurante, com categorias de produtos, preços destacados e botões de pedido pelo WhatsApp.
-            </p>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Visão estratégica</h3>
+                    <p>
+                        Não criamos apenas páginas. Pensamos em soluções que ajudem a empresa a vender, atender e se
+                        posicionar melhor.
+                    </p>
+                </div>
 
-            <a 
-                href="https://grupofrk.github.io/cardapio-digital-demo-01/"
-                target="_blank"
-                class="botao-portfolio"
-            >
-                Ver projeto online
-            </a>
+                <div class="card">
+                    <h3>Soluções acessíveis</h3>
+                    <p>
+                        Nosso foco são pequenos negócios que precisam de tecnologia prática, objetiva e adequada à sua
+                        realidade.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Atendimento próximo</h3>
+                    <p>
+                        Buscamos entender cada negócio antes de indicar uma solução, evitando projetos genéricos e sem
+                        utilidade real.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <section id="contato">
-    <h2>Contato</h2>
+    <section class="section snap-section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <span>Portfólio</span>
+                <h2>Projetos e demonstrações</h2>
+                <p>
+                    Alguns projetos abaixo são modelos demonstrativos criados para apresentar possibilidades de uso para
+                    pequenos negócios.
+                </p>
+            </div>
 
-    <div class="contato-card">
-        <p>
-            Quer melhorar a presença digital da sua empresa com sites, cardápios digitais ou automações?
-        </p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <h3>Porto Grill</h3>
+                    <p>
+                        Site institucional fictício para restaurante, com apresentação do negócio, cardápio digital,
+                        botões de pedido pelo WhatsApp, localização e contato.
+                    </p>
+                    <a href="https://rupofrk.github.io/restaurante-demo-01/" target="_blank" class="btn btn-primary">
+                        Ver projeto online
+                    </a>
+                </div>
 
-        <p>
-            Fale com o Grupo FRK e solicite uma proposta personalizada.
-        </p>
+                <div class="portfolio-card">
+                    <h3>Cardápio Digital Demo 01</h3>
+                    <p>
+                        Cardápio digital fictício para restaurante, com categorias de produtos, preços, destaques e
+                        botões de pedido pelo WhatsApp.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Ver projeto online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <a 
-            href="https://wa.me/5581999999999?text=Olá,%20gostaria%20de%20conhecer%20os%20serviços%20do%20Grupo%20FRK"
-            target="_blank"
-            class="botao-contato"
-        >
-            Falar no WhatsApp
-        </a>
-    </div>
-</section>
+   <section class="section about snap-section">
+        <div class="container about-content">
+            <div>
+                <span>Sobre nós</span>
+                <h2>Sobre o Grupo FRK</h2>
+                <p>
+                    O Grupo FRK é uma empresa de tecnologia criada para ajudar pequenos e médios negócios a se
+                    posicionarem melhor no digital, melhorarem seu atendimento e utilizarem soluções modernas de forma
+                    simples e eficiente.
+                </p>
 
-    <footer>
-    <p>© 2026 Grupo FRK. Todos os direitos reservados.</p>
+                <p>
+                    Nosso foco está no desenvolvimento de sites profissionais, agentes de inteligência artificial,
+                    automações e soluções digitais sob medida para empresas que desejam crescer com mais organização,
+                    credibilidade e inovação.
+                </p>
+            </div>
 
-    <p>
-        Soluções digitais para pequenas empresas.
-    </p>
-</footer>
+            <div class="about-box">
+                <h3>Nossa missão</h3>
+                <p>
+                    Ajudar pequenas empresas a usarem tecnologia de forma prática, acessível e estratégica.
+                </p>
+
+                <h3>Nossa visão</h3>
+                <p>
+                    Ser referência em soluções digitais e inteligência artificial para pequenos negócios no Brasil.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq snap-section">
+        <div class="container">
+            <div class="section-title">
+                <span>Dúvidas frequentes</span>
+                <h2>Perguntas comuns</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>O Grupo FRK atende apenas empresas de Ipojuca?</h3>
+                    <p>
+                        Não. O atendimento inicial tem foco em Ipojuca e região, mas também podemos atender empresas de
+                        outras cidades de forma online.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Minha empresa ainda não tem site. Vocês criam do zero?</h3>
+                    <p>
+                        Sim. Criamos sites profissionais do zero, desde a estrutura da página até os textos, layout e
+                        botões de contato.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>O agente de IA substitui uma pessoa no atendimento?</h3>
+                    <p>
+                        Não necessariamente. Ele ajuda no atendimento inicial, responde dúvidas frequentes e encaminha o
+                        cliente para uma pessoa quando necessário.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact snap-section" id="contato">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Pronto para profissionalizar sua empresa com tecnologia?</h2>
+                <p>
+                    Fale com o Grupo FRK e solicite uma proposta personalizada para site, cardápio digital, automação ou
+                    agente de IA.
+                </p>
+
+                <a href="https://wa.me/5581986004105" target="_blank" class="btn btn-whatsapp">
+                    Falar no WhatsApp
+                </a>
+
+                <p class="contact-info">
+                    Substitua o número do WhatsApp pelo número oficial do Grupo FRK.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <h3>Grupo FRK</h3>
+                <p>Tecnologia, sites, inteligência artificial e soluções digitais para pequenas empresas.</p>
+            </div>
+
+            <div>
+                <p><strong>Atendimento:</strong> Ipojuca - PE e online para todo o Brasil</p>
+                <p><strong>E-mail:</strong> frk.grupo@gmail.com</p>
+                <p><strong>Instagram:</strong> @frk.grupo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+    }
+
+    const sections = Array.from(document.querySelectorAll(".snap-section"));
+    const arrowUp = document.getElementById("arrow-up");
+    const arrowDown = document.getElementById("arrow-down");
+
+    let currentSection = 0;
+    let isScrolling = false;
+
+    function updateArrows() {
+        if (!arrowUp || !arrowDown) {
+            return;
+        }
+
+        if (currentSection === 0) {
+            arrowUp.classList.add("hidden");
+        } else {
+            arrowUp.classList.remove("hidden");
+        }
+
+        if (currentSection === sections.length - 1) {
+            arrowDown.classList.add("hidden");
+        } else {
+            arrowDown.classList.remove("hidden");
+        }
+    }
+
+    function goToSection(index) {
+        if (index < 0 || index >= sections.length) {
+            return;
+        }
+
+        isScrolling = true;
+        currentSection = index;
+        updateArrows();
+
+        sections[currentSection].scrollIntoView({
+            behavior: "smooth"
+        });
+
+        setTimeout(function () {
+            isScrolling = false;
+        }, 900);
+    }
+
+    if (arrowUp) {
+        arrowUp.addEventListener("click", function () {
+            goToSection(currentSection - 1);
+        });
+    }
+
+    if (arrowDown) {
+        arrowDown.addEventListener("click", function () {
+            goToSection(currentSection + 1);
+        });
+    }
+
+    const links = document.querySelectorAll(".nav-links a");
+
+    links.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            const sectionId = link.getAttribute("href");
+            const targetSection = document.querySelector(sectionId);
+            const targetIndex = sections.indexOf(targetSection);
+
+            if (navLinks) {
+                navLinks.classList.remove("active");
+            }
+
+            if (targetIndex !== -1 && window.innerWidth > 900) {
+                event.preventDefault();
+                goToSection(targetIndex);
+            }
+        });
+    });
+
+    window.addEventListener("wheel", function (event) {
+        if (window.innerWidth <= 900) {
+            return;
+        }
+
+        event.preventDefault();
+
+        if (isScrolling) {
+            return;
+        }
+
+        if (event.deltaY > 0) {
+            goToSection(currentSection + 1);
+        } else {
+            goToSection(currentSection - 1);
+        }
+    }, { passive: false });
+
+    window.addEventListener("keydown", function (event) {
+        if (window.innerWidth <= 900) {
+            return;
+        }
+
+        if (event.key === "ArrowDown") {
+            goToSection(currentSection + 1);
+        }
+
+        if (event.key === "ArrowUp") {
+            goToSection(currentSection - 1);
+        }
+    });
+
+    updateArrows();
+</script>
 
 </body>
+
 </html>
