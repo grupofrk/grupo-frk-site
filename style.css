@@ -195,3 +195,14 @@ footer{
 footer p{
     margin:5px 0;
 }
+
+.portfolio-grid{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.portfolio-grid .portfolio-card{
+    flex:1;
+    min-width:250px;
+}
