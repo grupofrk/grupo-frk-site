@@ -20,7 +20,10 @@ Apresentar os serviços do Grupo FRK, incluindo criação de sites, cardápios d
 
 ## Portfólio
 
-O site apresenta o projeto Porto Grill como primeiro item de portfólio do Grupo FRK.
+O site apresenta os primeiros projetos desenvolvidos como demonstração do Grupo FRK:
+
+- Porto Grill: site institucional fictício para restaurante.
+- Cardápio Digital Demo 01: cardápio digital fictício com pedidos pelo WhatsApp.
 
 ## Tecnologias utilizadas
 
