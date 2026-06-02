@@ -183,3 +183,15 @@ section p{
         font-size:15px;
     }
 }
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:5px 0;
+}
