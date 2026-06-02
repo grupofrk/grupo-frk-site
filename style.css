@@ -146,3 +146,40 @@ section p{
     border-radius:6px;
     font-weight:bold;
 }
+
+@media (max-width: 768px){
+    nav{
+        flex-direction:column;
+        padding:20px;
+        gap:15px;
+    }
+
+    nav div{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    nav a{
+        margin-left:0;
+        font-size:14px;
+    }
+
+    header{
+        padding:70px 20px;
+    }
+
+    header h1{
+        font-size:34px;
+    }
+
+    header p{
+        font-size:17px;
+    }
+
+    header a{
+        padding:12px 20px;
+        font-size:15px;
+    }
+}
